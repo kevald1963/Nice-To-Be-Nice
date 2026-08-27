@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="row">
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+        <!-- TEXT PANEL - VOLUNTEER #1 -->
+        <!-- This <div> is both the 2nd element in the column and page, for xs & sm viewport sizes. -->
+        <!-- It is hidden for viewport sizes above md. -->
+        <div class="general-panel orange-panel flex-with-text d-md-none">
+            <div class="uppercase panel-title">What we do</div>
+            {% include 'subtemplates/volunteerpanel.html' %}
+        </div>
+        <!-- /.TEXT PANEL - VOLUNTEER #1 -->
+
+        <!-- TEXT PANEL - SUPPORT #1 -->
+        <!-- This div is the 3rd element in the page for xs & sm viewport sizes. -->
+        <!-- It becomes the 2nd element in the page for viewport sizes above md. -->
+        <div class="general-panel green-panel flex-with-text">
+            <div class="uppercase panel-title">Support our causes!</div>
+            {% include 'subtemplates/supportpanel.html' %}
+        </div>
+        <!-- /.TEXT PANEL - SUPPORT #1 -->
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+        <!-- TEXT PANEL - VOLUNTEER #2 -->
+        <!-- This div is the 1st element in this column, for md+ viewport sizes. -->
+        <!-- It is hidden for viewport sizes below md. See subtemplates/volunteerpanel.html for text. -->
+        <div class="general-panel orange-panel flex-with-text d-none d-md-block">
+            <div class="uppercase panel-title">What we do</div>
+            {% include 'subtemplates/volunteerpanel.html' %}
+        </div>
+        <!-- /.TEXT PANEL - VOLUNTEER #2 -->
+    </div>
+
+</section>
+
+{% endblock %}

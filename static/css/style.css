@@ -1,0 +1,495 @@
+/*---------------------------------------------------- General styling */
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    margin-top: 85px;
+}
+
+#content-container {
+    margin-bottom: 15px;
+}
+
+header {
+    margin: 0;
+}
+
+/* Remove bullet points from lists by default.
+ul {
+    list-style: none;
+}
+*/
+
+.carousel-video-panel {
+    margin-top: 15px;
+    padding: 2px 2px 5px 5px;
+    border-radius: 6px;
+}
+
+/*
+.carousel-item {
+    background-color: lightblue;
+}
+*/
+
+.carousel-control-prev-icon {
+    background-color: blue;
+}
+
+.carousel-control-next-icon {
+    background-color: blue;
+}
+
+.table {
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   width: 70% !important;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.col-md-7, .col-lg-7 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* Prevent anchor tags causing line breaks in text blocks. */
+.inline {
+    display: inline;
+}
+
+.list-item-margin li {
+    margin-bottom: 10px;
+}
+
+/*---------------------------------------------------- Link styling */
+
+/* Use general-link for green panels with white typeface. */
+/* Use orange-panel-link for orange panels with black typeface. */
+
+.general-link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.general-link:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.general-link:hover {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.general-link:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.orange-panel-link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.orange-panel-:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.orange-panel-link:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.orange-panel-link:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.purple-background {
+    background-color: rebeccapurple;
+}
+
+.panel-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.email-link  {
+    color: blue;
+    text-align: center;
+}
+
+.email-link:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+/* Use with "giftaid it" logo image to show a a light blue background with black typeface. */
+.giftaid {
+    margin-top: 0;
+    background-color: lightblue;
+}
+
+/*-------------------------------------------------- Header Alert */
+
+.alert-container .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.test-only-alert {
+    color: #544600;
+    background-color: #eec802;
+    border: none;
+    padding: 5px 15px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.live-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.live-link:hover {
+    color: green;
+}
+
+.live-link:focus {
+    text-decoration: none;
+    color: green;
+}
+
+.live-link:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+/*-------------------------------------------------- Header */
+
+.page-title {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fafafa;
+    background-color: green;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.page-title h1 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/*-------------------------------------------------- Navbar */
+
+/* Navbar text set to 100% white. Default varies between 50 and 75%. */
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.donation-button {
+    background-color:coral;
+    border:1px solid;
+}
+
+.donation-button:hover {
+    background-color:coral;
+}
+
+/*-------------------------------------------------- Modal Windows */
+/* Modal windows are used to show email contact forms, videos and audio podcasts. */
+
+.modal-footer {
+    text-align: left;
+}
+/*-------------------------------------------------- Footer */
+
+footer {
+    display: flex;
+    flex-flow: column;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    min-height: 110px;
+    padding: 5px;
+    background-color: #676767;
+    color: #fafafa;
+}
+
+.footer {
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    color: #f0ad4e;
+}
+
+.footer-link {
+    color: #f0ad4e;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: lightblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.footer-link:active {
+    color: #f0ad4e;
+    text-decoration: none;
+}
+
+.footer-link:visited {
+    color: #f0ad4e;
+    text-decoration: underline;
+}
+
+/*-------------------------------------------------- Home Page */
+
+/*-- Redundant style? */
+.donation-panel {
+    background-color: yellow;
+    color: #fafafa;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 6px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+.group-image {
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+.photo-credit {
+    background-color: #e5e5e5;
+    color: #000;
+    padding-left: 3px;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+.photo-credit-special {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+.photo-credit a {
+    color: #337ab7;
+}
+
+.photo-credit a:hover {
+    color: darkblue;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.photo-credit a:focus {
+    color: darkblue;
+    text-decoration: none;
+}
+
+/*-------------------------------------------------- Our Team Page */
+.image-gallery {
+    height: 500px;
+    max-width: 100%;
+    min-width: 88%;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+/*-------------------------------------------------- Volunteering Pages */
+.image-activity {
+    max-width: 100%;
+    min-width: 88%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+.general-panel {
+    /* max-width: 576px; */
+    color: white;
+    margin: auto;
+    margin-top: 15px;
+    padding: 2px 2px 5px 5px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+.wide-panel {
+    max-width: 1200px;
+}
+
+.deep-margins {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.orange-panel {
+    color: yellow;
+    background-color: darkblue;
+    /* background-color: #f0ad4e; */
+}
+
+.green-panel {
+    color: black;
+    background-color: lightblue;
+}
+
+
+/* Use Flexbox to allow panel to adjust height according to text content. */
+.flex-with-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Highlight menu item text for Volunteer|Apply to Volunteer */
+.highlight-text {
+    color: red;
+}
+
+/*-------------------------------------------------- Logo */
+
+.logo-image {
+    width: 100px;
+    height: 100px;
+}
+
+.main-container-position {
+    margin-top: 35px;
+}
+
+/*-------------------------------------------------- Media Queries */
+/*
+@media (max-width:336px) {
+
+    .logo-image {
+        max-width: 50%;
+    }
+
+    .main-container-position {
+        padding-top: 15px;
+    }
+}
+*/
+
+@media(max-width: 767px) {
+
+    .page-title h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .local-news {
+        margin: auto;
+        margin-top: 15px;
+        min-width: 100%;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .news {
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        max-height: 500px;
+        min-width: 680px;
+    }
+ 
+    .local-news {
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        min-width: 100%;
+    }
+
+    .text-metro-lobby {
+        min-height: 450px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-image {
+        margin: auto;
+        margin-top: 15px;
+        min-width: 100%;
+    }
+    
+    footer {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:991px) {
+
+    footer {
+        position: relative;
+    }
+
+    #content-wrap {
+        padding-bottom: 0;    /* Remove padding for footer height. Not applicable below 991px. */
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    
+    .about-image {
+        margin: auto;
+        margin-top: 15px;
+        min-width: 100%;
+    }
+}
+

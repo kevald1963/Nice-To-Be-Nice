@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- HISTORY -->
+
+    <!-- 28/04/2024: Site went live at https://greenfield-foundation,com on heroku-22 stack.  -->
+
+    <!-- /.HISTORY -->
+
+    <title>Nice To Be Nice | {{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <meta name="description" content="Nice To Be Nice is a northeast Community Interest Company that provides funding
+                and support for.... We are based in Newcastle-upon-Tyne.">
+    <meta name="keywords" content="Nice To Be Nice, Newcastle. Tyne & Wear, northeast England, CIC, Community Interest
+                Company, mental health, education, teaching, childcare, sports, music, dance, art, healthcare">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+
+    <!-- Bootstrap stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap javaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-container">
+
+            <!-- NAVBAR -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark border-bottom border-white" style="background-color:grey" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <!-- Allow navigation to Home page via logo image. -->
+                    <a class="" href="{{ url_for('index') }}">
+                        <img class="logo-image" src="static/images/NTBN_logo_1.jpg" alt="Nice To Be Nice logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                        style="background-color:coral;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- HOME -->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">
+                                    Home
+                                </a>
+                            </li>
+
+                            <!-- ABOUT US -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <ul class="dropdown-menu" data-bs-theme="light">
+                                    <li><a class="dropdown-item" href="{{ url_for('ourteam') }}">Our Team</a></li>
+                                    <li><a class="dropdown-item" href="{{ url_for('ourorganisation') }}">Our Organisation</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- DONATE BUTTON -->
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <button type="button" class="btn donation-button">
+                                    <a class="nav-link" href="{{ url_for('supportus') }}">Support Us</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- /.NAVBAR -->
+
+            <!-- MAIN -->
+            <main class="container">
+                <div class="main-container-position">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </main>
+            <!-- /.MAIN -->
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid">
+            <!-- Split Footer into three columns. -->
+            <div class="row">
+
+                <!-- ABOUT -->
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <h5 class="uppercase footer">About</h5>
+                    <p class="inline-block">
+                        Nice To Be Nice is a Community Interest Company that raises funds for various community
+                        programmes in the northeast of England....
+                    </p>
+                </div>
+                <!-- ./ABOUT -->
+
+                <div class="col-md-4">
+                    <!-- EMAIL US -->
+                    <h5 class="uppercase footer">Email us</h5>
+                    <p class="inline-block">
+                        Any questions about Nice To Be Nice?<br>
+                        Email our Managing Director as follows:<br>
+                        <a class="footer-link" href="mailto:kevin_alderson@yahoo.co.uk">Kieran Wilkinson</a><br>
+                        Want to report a website issue?<br>
+                        Email our Web Manager: <a class="footer-link" href="mailto:kevin_alderson@yahoo.co.uk">kevin_alderson@yahoo.co.uk</a>
+                    </p>
+                    <!-- /.EMAIL US -->
+                </div>
+
+                <div class="col-md-4">
+                    <!-- PHONE US -->
+                    <h5 class="uppercase footer">Phone us</h5>
+                    <p class="inline-block">
+                        UK: <a class="footer-link" href="tel:+447957520067">+44 7957 520067</a><br>
+                    </p>
+                    <!-- /.PHONE US -->
+
+                    <!-- SOCIAL MEDIA -->
+                    <h5 class="uppercase footer">Facebook</h5>
+                    <p class="inline-block">
+                        Ghana: <a class="footer-link" target="_blank" href="https://www.facebook.com/GreenfieldFoundation.Gh">Greenfield Foundation</a><br>
+                        UK: <a class="footer-link" target="_blank" href="https://www.facebook.com/GreenfieldUK">Greenfield UK</a>
+                    </p>
+                    <!-- /.SOCIAL MEDIA -->
+                </div>
+            </div>
+        </footer>
+        <!-- /.FOOTER -->
+    </div>
+
+    <!-- Go back to previous page when Return button clicked. -->
+    <script>
+        function goBack() {
+            window.history.back();
+        };
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
