@@ -1,14 +1,13 @@
-# Greenfield Africa website
-
-## Introduction
+# Nice To Be Nice website
 
 ### Organisation Overview
-
+Nice To Be Nice (NTBN) is a Community Interest Company (CIC) that runs social
+projects in the northeast of England.
 
 ### Website Purpose
 
-- 
--  
+- Advertise the services on offer to the public.
+- Signpost visitors to other organisations that offer support that NTBN does not provide.
 - 
 
 ### Aims For This Release
@@ -17,7 +16,7 @@
  
 ### Website Audience
 
-This consists of ..
+This consists of ...
 
 ### User Stories
 
@@ -25,7 +24,7 @@ User stories to be catered for in this release:
 
 ### Layouts
 
-The files shown below are stored in the __Project Documentation_ folder in the GitHub repository. The layout diagrams show both wide screen and mobile layouts. I drew out the Home page layout first, but I didn't stick to it as it didn't look right on the page. The later pages reflect the new design. Even then, I haven't followed the later designs to the letter, but repositioned elements according to what looked right in practice. I did not design layouts for the Acknowledgement page as it consisted only of a simple banner message and a Return button. Similarly for the 'Under construction' pages, as these were cloned from the Acknowledgement page, though styled with a different background colour. 
+The files shown below are stored in the __Project Documentation_ folder.
 
 - Proposed menu and page structure.pdf
 - Home page layouts.jpg
